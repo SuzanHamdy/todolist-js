@@ -1,0 +1,162 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+body{
+    background-color:#ecf1e6;
+
+}
+.container{
+width: 50%;
+height: auto;
+min-height: 600px;
+
+margin: 20px auto;
+border: 1px  solid #718355;
+color: #718355;
+border-radius: 30px;
+padding: 30px;
+text-align: center;
+cursor: pointer;
+transition: all .5s;
+}
+ul li{
+    list-style-type: none;
+    transition: all .5s;
+    color: #718355;
+    cursor: pointer;
+    padding: 13px 50px;
+    user-select: none;
+    border: 1px  solid #718355;
+    border-radius: 20px;
+    margin-bottom:20PX ;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    position: relative;
+    transition: all .5s ease;
+}
+
+ /* .checker{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #fbf6f6;
+    border: 1px  solid #718355;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+ }
+ .checker.active{
+   background-color: #283618; 
+ } */
+ .done{
+    text-decoration: line-through;
+    font-size: 30px;
+    font-weight: bold;
+ color: #283618;
+ 
+ }
+.container h1{
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 20px;
+}
+form{
+    width: 60%;
+    height: 35px;
+    margin:20px auto;
+    cursor: pointer;
+    border: #1b2016;
+    font-size: 50px;
+    background-color:#ecf1e6;
+padding:10px  ;
+border-radius: 20px;
+position: relative;
+border: 1px  solid #718355;
+}
+form #text{
+    width: 90%;
+    height: 90%;
+  border: none;
+  outline: none;
+  background-color:#ecf1e6;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  left: 3px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-left: 8px;
+}
+form #text::placeholder{
+    color: #718355;  
+    font-size: 28px;
+}
+form  #submit{
+font-size: 40px;
+border-radius: 50%;
+border: 5px solid #718355;
+color: #718355;
+position: absolute;
+top: 0px;
+right: 0;
+cursor: pointer;
+transition: all .5s;
+
+}
+form  #submit:hover{
+    scale: 0.9;
+}
+@media (max-width : 700px) {
+    .container{
+        width: 80%;
+        height: auto;
+        min-height: 600px;
+        margin: 5px;
+        border: 1px  solid #718355;
+        color: #718355;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+        transition: all .5s;
+        } 
+        ul li{
+            padding: 8px  ;
+            border-radius: 10px;
+            margin-bottom:20PX ;
+            font-size: 23px;
+        }
+        .done{
+            text-decoration: line-through;
+            font-size: 20px;
+            font-weight: bold;
+         color: #283618;
+         }
+         .container h1{
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        form{
+            width: 90%;
+            height: 35px;
+            margin:20px auto;
+            cursor: pointer;
+            border: #1b2016;
+            font-size: 30px;
+        padding:10px  ;
+        border-radius: 10px;
+        border: 1px  solid #718355;
+        }
+      
+        form #text::placeholder{
+            color: #718355;  
+            font-size: 25px;
+        }
+       
+}
